@@ -91,10 +91,13 @@ h5 {
 
 .enter-img {
 	display: block;
-	margin: 50px auto 50px auto;
+	/*margin: 50px auto 50px auto;*/
+	margin: 0 auto 0 auto;
 	width: 400px;
 	height: 400px;
 	border-radius: 10px;
+	position: relative;
+	top: 25%;
 }
 
 .enter-title {
@@ -105,6 +108,18 @@ h5 {
 	color: #999;
 }
 
+#splash {
+	background: -webkit-linear-gradient(black , #222);
+	background:    -moz-linear-gradient(black , #222);
+	background:         linear-gradient(black , #222);
+	width: 100%;
+	height: 100%;
+	/*z-index: 1;*/
+	position: fixed;
+
+}
+
+
 /*
 -----Header-----
 */
@@ -114,6 +129,8 @@ header {
 	background:         linear-gradient (#000, rgba(0,0,0,0));
 	height: 150px;
 	width: 100%;
+	/*z-index: 0;*/
+	position:fixed;
 }
 
 .header-logo {
