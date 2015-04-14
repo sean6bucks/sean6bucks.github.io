@@ -3,21 +3,39 @@
 	<head>
 		<title>Mister Baby - Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
 	</head>
 	<body class="page">
-		<header>
+		<div id="header">
 			<img class="header-logo" src="images/MBlogotranssmall.gif">
-			<table class="pagenav">
-				<tr>
-					<td><a href="about.html"><h5><u>About</u></h5></a></td>
-					<td><a href="work.html"><h5><u>Portfolio</u></h5></a></td>
-					<td><a href="store.html"><h5><u>Store</u></h5></a></td>
-					<td><a href="blog.html"><h5><u>Blog</u></h5></a></td>
-				</tr>
-			</table>
-		</header>
+			<ul class="pagenav">
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li>
+						<a href="work.html">Portfolio</a>
+					</li>
+					<li><!-- <a href="store.html">-->
+						<a href="http://www.MisterBabyDesign.com">Store</a>
+					</li>
+					<!-- eventually switch back to store.html when internal store is built -->
+					<li>
+						<a href="http://misterbabydesign.tumblr.com" target="_blank">Blog</a>
+					</li>
+					<!-- eventually tumblr page html/css will be customized to match site -->
+			</ul>
+		</div>
+
+		
+		<div class="main-column">
+			<img class="jumbotron" src="images/natalie.jpg" />
+		</div>
+
 		<footer>
 			<p>Mister Baby Design&copy; 2015</p>
 		</footer>
+		
+		<script src="jquery.min.js"></script>
+   		<script src="splashSlide.js"></script>
 	</body>
 </html>
