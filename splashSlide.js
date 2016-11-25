@@ -7,14 +7,8 @@
 var main = function() {
 
 	$('.enter-img').click(function() {
-		window.location.path = '/top5';
-		// $('#splash').fadeOut("1000").slideUp("slow");
-		$('#splash')
-    .animate({top: '-100%', opacity: 0}, 'slow', function() {
-        $('#splash').remove();
-    });
-
-	});	
+		window.location.replace("http://sean6bucks.github.io/top5");
+    	});	
 };
 
 $(document).ready(main);
