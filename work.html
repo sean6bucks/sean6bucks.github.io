@@ -4,38 +4,20 @@
 		<title>Mister Baby - Portfolio</title>
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+		<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/pbt92n72';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
 	</head>
 	<body class="page">
-		<div id="header">
-			<img class="header-logo" src="images/MBlogotranssmall.gif">
-			<ul class="pagenav">
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="work.html">Portfolio</a>
-					</li>
-					<li><!-- <a href="store.html">-->
-						<a href="http://www.MisterBabyDesign.com">Store</a>
-					</li>
-					<!-- eventually switch back to store.html when internal store is built -->
-					<li>
-						<a href="http://misterbabydesign.tumblr.com" target="_blank">Blog</a>
-					</li>
-					<!-- eventually tumblr page html/css will be customized to match site -->
-			</ul>
-		</div>
-
+		<button onclick="sendIntercom()">CLICK ME</button>
 		
-		<div class="main-column">
-			<img class="jumbotron" src="images/natalie.jpg" />
-		</div>
-
-		<footer>
-			<p>Mister Baby Design&copy; 2015</p>
-		</footer>
-		
-		<script src="jquery.min.js"></script>
-   		<script src="splashSlide.js"></script>
+		<script>
+			var sendIntercom = function() {
+				window.Intercom("boot", {
+				    app_id: "pbt92n72",
+				    name: "Jane Doe", // Full name
+				    email: "fake@faker.com", // Email address
+				    created_at: new Date(); // Signup date as a Unix timestamp
+				});
+			};
+		</script>
 	</body>
 </html>
